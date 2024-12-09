@@ -4,7 +4,6 @@ import re
 def read_and_parse_file(file_path):
     instructions = []
 
-    # Regular expression to match commands and coordinates
     pattern = r'(toggle|turn off|turn on) (\d+),(\d+) through (\d+),(\d+)'
 
     with open(file_path, 'r') as file:
